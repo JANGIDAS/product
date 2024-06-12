@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Sedan SC", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .row {
+            display: flex;
+           }
+
+        .row2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .card {
+            width: 25%;
+            border: 2px solid gray;
+            padding: 4px;
+            margin: 3px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(0.9);
+            border-radius: 5px;
+        }
+
+        .img {
+            position: relative;
+        }
+
+        .discount {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .cut {
+            text-decoration: line-through;
+            color: red;
+        }
+
+        button {
+            font-size: 20px;
+            width: 100%;
+            padding: 5px;
+            margin: 2px;
+            background-color: orange;
+            border-radius: 5px;
+            border: none;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        button:hover {
+            background-color: goldenrod;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .unchecked {
+            color: red;
+        }
+
+        span {
+            float: right;
+        }
+        h4{
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        @keyframes example {
+            0% {
+                background-color: red;
+                color:
+            }
+
+            25% {
+                background-color: yellow;
+                color: black;
+            }
+
+            50% {
+                background-color: rgb(52, 52, 130);
+                color: white;
+            }
+
+            100% {
+                background-color: green;
+                color: beige;
+            }
+        }
+        .add-to{
+            display: flex;
+            align-items: center;
+        }
+        .top{
+            display:inline;
+            margin: auto;
+        }
+      .fa-shopping-cart{
+        margin: 15px;
+        font-size: 25px;
+      }
+      @media screen and (max-width: 480px) {
+     .row{
+        flex-direction: column;
+        padding: 20px;
+     }
+     .row2{
+        flex-direction: column;
+        padding: 20px;
+     }
+     .card{
+        margin:auto;
+        width:100%;
+        margin-top: 10px;
+     }
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="add-to">
+            <div class="top">
+          <h1 style="text-align: center;">product</h1>
+        </div>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="row">
+            <div class="card">
+                <div class="img"> <img src="71MTGIIPX9L._SY879_.jpg" alt="">
+                    <img src="20-percent-discount-sign-icon-sale-symbol-vector-2880153.jpg" alt=""
+                        class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button onclick="myFunction()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"> <img src="61nk5BkLnoL._SX679_.jpg" alt="">
+                    <img src="OIP.jpeg" alt="" class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button onclick="myFunction()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"> <img src="81lcNGz6lZL._SY879_.jpg" alt="">
+                    <img src="OIP (1).jpeg" alt="" class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button onclick="myFunction()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"> <img src="th.jpeg" alt="">
+                    <img src="20-percent-discount-sign-icon-sale-symbol-vector-2880153.jpg" alt=""
+                        class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="card">
+                <div class="img"> <img src="71MTGIIPX9L._SY879_.jpg" alt="">
+                    <img src="20-percent-discount-sign-icon-sale-symbol-vector-2880153.jpg" alt=""
+                        class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button onclick="myFunction()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"> <img src="61nk5BkLnoL._SX679_.jpg" alt="">
+                    <img src="OIP.jpeg" alt="" class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button onclick="myFunction()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"> <img src="81lcNGz6lZL._SY879_.jpg" alt="">
+                    <img src="OIP (1).jpeg" alt="" class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button onclick="myFunction()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"> <img src="th.jpeg" alt="">
+                    <img src="20-percent-discount-sign-icon-sale-symbol-vector-2880153.jpg" alt=""
+                        class="discount">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h3>Men's 2 Piece Solid Button Down Shirt</h3>
+                        <h4>price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>7,159.00</h4>
+                        <h4 class="cut">price <i class="fa fa-rupee" style="padding: 2px; margin: 2px;"></i>9,159.00
+                        </h4>
+                        <p>Comfy and lightweight material, it is breathable and skin-friendly Features: button down,
+                            short sleeve</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <button onclick="myFunction()">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function myFunction() {
+        alert("Please Go For login Page");
+    }
+</script>
+
+</html>
